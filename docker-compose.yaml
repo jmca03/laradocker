@@ -1,6 +1,79 @@
 version: '3.9'
 
 services:
+  nginx:
+    build:
+      context: ./
+      dockerfile: ./dockerfiles/nginx.dockerfile
+    volumes:
+        - ./src:/var/www/html
+    ports:
+      - '80:80'
+    container_name: nginx
+    restart: unless-stopped
+    depends_on:
+      - php
+      - mysql
+      - mongodb
+      - redis
+  php:
+    build:
+      context: ./
+      dockerfile: ./dockerfiles/php.dockerfile
+      target: base
+    restart: unless-stopped
+    ports:
+      - '9000'
+    volumes:
+      - ./src:/var/www/html:delegated
+    container_name: php
+  mysql:
+    build:
+      context: ./
+      dockerfile: ./dockerfiles/database.dockerfile
+      target: mysql
+    restart: unless-stopped
+    volumes:
+      - mysqld:/var/lib/mysql
+    env_file:
+      - ./dockerenvs/mysql.env
+    ports:
+      - '3306:3306'
+    container_name: mysql
+  mongodb:
+    build:
+      context: ./
+      dockerfile: ./dockerfiles/database.dockerfile
+      target: mongodb
+    restart: unless-stopped
+    volumes:
+      - mongod:/data/db
+    env_file:
+      - ./dockerenvs/mongodb.env
+    ports:
+      - '27017:27017'
+    container_name: mongodb
+  redis:
+    build:
+      context: ./
+      dockerfile: ./dockerfiles/database.dockerfile
+      target: redis
+    restart: unless-stopped
+    volumes:
+      - redisd:/data
+    ports:
+      - '6379:6379'
+    container_name: redis
+  artisan:
+    build:
+      context: ./
+      dockerfile: ./dockerfiles/php.dockerfile
+      target: artisan
+    # entrypoint: [ "php", "/var/www/html/artisan" ]
+    volumes:
+      - ./src:/var/www/html
+    user: www-data
+    container_name: artisan
   composer:
     build: 
       context: ./
