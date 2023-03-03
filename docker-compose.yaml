@@ -1,0 +1,43 @@
+version: '3.9'
+
+services:
+  composer:
+    build: 
+      context: ./
+      dockerfile: ./dockerfiles/utility-tools.dockerfile
+      target: composer
+    volumes:
+      - ./src:/var/www/html
+    entrypoint: [ "composer", "--ignore-platform-reqs" ]
+    container_name: composer
+  npm:
+    build:
+      context: ./
+      dockerfile: ./dockerfiles/utility-tools.dockerfile
+      target: node
+    entrypoint: [ "npm" ]
+    volumes:
+      - ./src:/var/www/html
+    container_name: npm
+  
+  # Custom command
+  create-laravel-app:
+    build: 
+      context: ./
+      dockerfile: ./dockerfiles/utility-tools.dockerfile
+      target: create-laravel-app
+    command: [ "create-project", "laravel/laravel:^9.0", "." ]
+    entrypoint: [ "composer", "--ignore-platform-reqs" ]
+    volumes:
+      - ./src:/var/www/html
+    container_name: create-laravel-app
+  install-mongodb-package:
+    build: 
+      context: ./
+      dockerfile: ./dockerfiles/utility-tools.dockerfile
+      target: install-mongodb-package
+    volumes:
+      - ./src:/var/www/html
+    command: [ "require", "jenssegers/mongodb:^3.9" ]
+    entrypoint: [ "composer", "--ignore-platform-reqs" ]
+    container_name: install-mongodb-package
