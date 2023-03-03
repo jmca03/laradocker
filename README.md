@@ -2,6 +2,17 @@
 
     A Dockerized Laravel Application
 
+## Pre-config
+
+    Pre-configuration branch is only used if you want to create
+    a laravel application without composer
+
+    Instruction:
+
+        1. Pull preconfig branch
+        2. Run docker-compose run --rm create-laravel-app
+        3. Run docker-compose run --rm install-mongodb-package
+
 ## Composer
 
     version: latest
