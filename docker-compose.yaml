@@ -6,7 +6,7 @@ services:
       context: ./
       dockerfile: ./dockerfiles/nginx.dockerfile
     volumes:
-        - ./src:/var/www/html
+        - ./src:/var/www/html/backend
     ports:
       - '80:80'
     container_name: nginx
@@ -22,7 +22,7 @@ services:
       dockerfile: ./dockerfiles/php.dockerfile
     restart: unless-stopped
     ports:
-      - '9000'
+      - '9000:9000'
     volumes:
       - ./src:/var/www/html/backend:delegated
     container_name: php
@@ -90,6 +90,9 @@ services:
     volumes:
       - ./src:/var/www/html/backend
     container_name: npm
+
+networks:
+  dsg:
 
 volumes:
   mysqld:

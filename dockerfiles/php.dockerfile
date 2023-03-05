@@ -29,6 +29,8 @@ RUN touch /var/log/cron.log
 
 RUN chmod 755 start.sh
 
+WORKDIR /var/www/html/backend
+
 EXPOSE 9000
 
 CMD [ "/bin/bash", "-c", "/var/www/html/start.sh" ]
