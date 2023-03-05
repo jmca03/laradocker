@@ -1,5 +1,5 @@
-FROM nginx:stable-alpine
+FROM nginx:stable
 
-COPY ./service.configurations/nginx/nginx.conf /etc/nginx/conf.d/default.conf
+COPY ./config/nginx/nginx.conf /etc/nginx/conf.d/default.conf
 
 EXPOSE 80

@@ -20,12 +20,11 @@ services:
     build:
       context: ./
       dockerfile: ./dockerfiles/php.dockerfile
-      target: base
     restart: unless-stopped
     ports:
       - '9000'
     volumes:
-      - ./src:/var/www/html:delegated
+      - ./src:/var/www/html/backend:delegated
     container_name: php
   mysql:
     build:
@@ -36,7 +35,7 @@ services:
     volumes:
       - mysqld:/var/lib/mysql
     env_file:
-      - ./dockerenvs/mysql.env
+      - ./env/mysql.env
     ports:
       - '3306:3306'
     container_name: mysql
@@ -49,7 +48,7 @@ services:
     volumes:
       - mongod:/data/db
     env_file:
-      - ./dockerenvs/mongodb.env
+      - ./env/mongodb.env
     ports:
       - '27017:27017'
     container_name: mongodb
@@ -68,10 +67,9 @@ services:
     build:
       context: ./
       dockerfile: ./dockerfiles/php.dockerfile
-      target: artisan
-    # entrypoint: [ "php", "/var/www/html/artisan" ]
+    entrypoint: [ "php", "/var/www/html/backend/artisan" ]
     volumes:
-      - ./src:/var/www/html
+      - ./src:/var/www/html/backend
     user: www-data
     container_name: artisan
   composer:
@@ -80,7 +78,7 @@ services:
       dockerfile: ./dockerfiles/utility-tools.dockerfile
       target: composer
     volumes:
-      - ./src:/var/www/html
+      - ./src:/var/www/html/backend
     entrypoint: [ "composer", "--ignore-platform-reqs" ]
     container_name: composer
   npm:
@@ -90,5 +88,10 @@ services:
       target: node
     entrypoint: [ "npm" ]
     volumes:
-      - ./src:/var/www/html
+      - ./src:/var/www/html/backend
     container_name: npm
+
+volumes:
+  mysqld:
+  mongod:
+  redisd:

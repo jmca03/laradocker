@@ -5,7 +5,7 @@
 # -----------------------------------------------------------------
 FROM composer:latest as composer
 
-WORKDIR /var/www/html
+WORKDIR /var/www/html/backend
 
 # -----------------------------------------------------------------
 # Node JS or NPM
@@ -13,4 +13,4 @@ WORKDIR /var/www/html
 
 FROM node:18.14.0-alpine3.17 as node
 
-WORKDIR /var/www/html
+WORKDIR /var/www/html/backend
