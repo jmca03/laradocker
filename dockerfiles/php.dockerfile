@@ -4,7 +4,9 @@ WORKDIR /var/www/html/backend
 
 COPY src .
 
-RUN apt update && apt upgrade
+RUN apt-get update && apt-get upgrade
+
+RUN apt-get install -y supervisor systemctl cron
 
 # Install PDO and PDO_Mysql
 RUN docker-php-ext-install pdo pdo_mysql
@@ -13,13 +15,11 @@ RUN pecl install  mongodb && docker-php-ext-enable mongodb
 # Install and enable redis extension
 RUN pecl install redis && docker-php-ext-enable redis
 
-RUN apt install -y supervisor systemctl cron
-
 COPY ./config/supervisord/supervisord.conf /etc/supervisor/supervisord.conf
 
 WORKDIR /var/www/html
 
-COPY ./config/start.sh .
+COPY ./config/build.sh .
 
 COPY ./config/crontab/root /etc/cron.d/root
 
@@ -27,10 +27,16 @@ RUN crontab /etc/cron.d/root
 
 RUN touch /var/log/cron.log
 
-RUN chmod 755 start.sh
+RUN chmod 755 build.sh
 
 WORKDIR /var/www/html/backend
 
+RUN touch storage/logs/laravel.log
+RUN chown -R www-data /var/www/html/backend
+RUN chown -R www-data /var/www/html/backend/storage/logs
+RUN chown -R www-data /var/www/html/backend/storage/logs/laravel.log
+
+
 EXPOSE 9000
 
-CMD [ "/bin/bash", "-c", "/var/www/html/start.sh" ]
+CMD [ "/bin/bash", "-c", "/var/www/html/build.sh" ]

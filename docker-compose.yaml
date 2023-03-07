@@ -91,9 +91,6 @@ services:
       - ./src:/var/www/html/backend
     container_name: npm
 
-networks:
-  dsg:
-
 volumes:
   mysqld:
   mongod:
