@@ -223,3 +223,522 @@
 2023-03-07 13:56:58,553 INFO spawned: 'crond' with pid 82
 2023-03-07 13:56:58,560 INFO exited: crond (exit status 0; not expected)
 2023-03-07 13:56:58,560 INFO gave up: crond entered FATAL state, too many start retries too quickly
+2023-03-07 14:13:16,219 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-03-07 14:13:16,225 WARN No file matches via include "/etc/supervisor/laravel-worker.conf"
+2023-03-07 14:13:16,249 INFO RPC interface 'supervisor' initialized
+2023-03-07 14:13:16,249 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2023-03-07 14:13:16,250 INFO supervisord started with pid 9
+2023-03-07 14:13:16,740 INFO spawned: 'crond' with pid 11
+2023-03-07 14:13:16,748 INFO spawned: 'laravel-worker_00' with pid 12
+2023-03-07 14:13:16,751 INFO spawned: 'laravel-worker_01' with pid 15
+2023-03-07 14:13:16,755 INFO spawned: 'laravel-worker_02' with pid 16
+2023-03-07 14:13:16,768 INFO spawned: 'laravel-worker_03' with pid 17
+2023-03-07 14:13:16,773 INFO spawned: 'laravel-worker_04' with pid 20
+2023-03-07 14:13:16,778 INFO spawned: 'laravel-worker_05' with pid 21
+2023-03-07 14:13:16,797 INFO spawned: 'laravel-worker_06' with pid 23
+2023-03-07 14:13:16,806 INFO spawned: 'laravel-worker_07' with pid 24
+2023-03-07 14:13:16,818 INFO spawned: 'php-fpm' with pid 26
+2023-03-07 14:13:16,821 INFO exited: crond (exit status 0; not expected)
+2023-03-07 14:13:17,968 INFO spawned: 'crond' with pid 62
+2023-03-07 14:13:17,968 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-07 14:13:17,969 INFO success: laravel-worker_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-07 14:13:17,969 INFO success: laravel-worker_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-07 14:13:17,969 INFO success: laravel-worker_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-07 14:13:17,969 INFO success: laravel-worker_04 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-07 14:13:17,969 INFO success: laravel-worker_05 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-07 14:13:17,970 INFO success: laravel-worker_06 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-07 14:13:17,970 INFO success: laravel-worker_07 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-07 14:13:17,970 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-07 14:13:17,995 INFO exited: crond (exit status 0; not expected)
+2023-03-07 14:13:20,377 INFO spawned: 'crond' with pid 76
+2023-03-07 14:13:20,414 INFO exited: crond (exit status 0; not expected)
+2023-03-07 14:13:23,421 INFO spawned: 'crond' with pid 82
+2023-03-07 14:13:23,432 INFO exited: crond (exit status 0; not expected)
+2023-03-07 14:13:23,432 INFO gave up: crond entered FATAL state, too many start retries too quickly
+2023-03-08 06:00:31,321 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-03-08 06:00:31,323 WARN No file matches via include "/etc/supervisor/laravel-worker.conf"
+2023-03-08 06:00:31,633 INFO RPC interface 'supervisor' initialized
+2023-03-08 06:00:31,633 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2023-03-08 06:00:31,633 INFO supervisord started with pid 8
+2023-03-08 06:00:31,782 INFO spawned: 'crond' with pid 10
+2023-03-08 06:00:31,785 INFO spawned: 'laravel-worker_00' with pid 11
+2023-03-08 06:00:31,788 INFO spawned: 'laravel-worker_01' with pid 12
+2023-03-08 06:00:31,794 INFO spawned: 'laravel-worker_02' with pid 13
+2023-03-08 06:00:31,802 INFO spawned: 'laravel-worker_03' with pid 14
+2023-03-08 06:00:31,807 INFO spawned: 'laravel-worker_04' with pid 15
+2023-03-08 06:00:31,810 INFO spawned: 'laravel-worker_05' with pid 16
+2023-03-08 06:00:31,813 INFO spawned: 'laravel-worker_06' with pid 17
+2023-03-08 06:00:31,816 INFO spawned: 'laravel-worker_07' with pid 19
+2023-03-08 06:00:31,825 INFO spawned: 'php-fpm' with pid 21
+2023-03-08 06:00:31,940 INFO exited: crond (exit status 0; not expected)
+2023-03-08 06:00:33,372 INFO spawned: 'crond' with pid 33
+2023-03-08 06:00:33,374 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 06:00:33,375 INFO success: laravel-worker_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 06:00:33,375 INFO success: laravel-worker_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 06:00:33,375 INFO success: laravel-worker_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 06:00:33,375 INFO success: laravel-worker_04 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 06:00:33,376 INFO success: laravel-worker_05 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 06:00:33,376 INFO success: laravel-worker_06 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 06:00:33,376 INFO success: laravel-worker_07 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 06:00:33,376 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 06:00:33,436 INFO exited: crond (exit status 0; not expected)
+2023-03-08 06:00:35,441 INFO spawned: 'crond' with pid 75
+2023-03-08 06:00:35,463 INFO exited: crond (exit status 0; not expected)
+2023-03-08 06:00:38,468 INFO spawned: 'crond' with pid 81
+2023-03-08 06:00:38,475 INFO exited: crond (exit status 0; not expected)
+2023-03-08 06:00:38,475 INFO gave up: crond entered FATAL state, too many start retries too quickly
+2023-03-08 12:39:36,146 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-03-08 12:39:36,146 WARN No file matches via include "/etc/supervisor/laravel-worker.conf"
+2023-03-08 12:39:36,155 INFO RPC interface 'supervisor' initialized
+2023-03-08 12:39:36,155 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2023-03-08 12:39:36,156 INFO supervisord started with pid 8
+2023-03-08 12:39:36,663 INFO spawned: 'crond' with pid 10
+2023-03-08 12:39:36,667 INFO spawned: 'laravel-worker_00' with pid 11
+2023-03-08 12:39:36,670 INFO spawned: 'laravel-worker_01' with pid 12
+2023-03-08 12:39:36,674 INFO spawned: 'laravel-worker_02' with pid 14
+2023-03-08 12:39:36,678 INFO spawned: 'laravel-worker_03' with pid 15
+2023-03-08 12:39:36,682 INFO spawned: 'laravel-worker_04' with pid 16
+2023-03-08 12:39:36,695 INFO spawned: 'laravel-worker_05' with pid 18
+2023-03-08 12:39:36,699 INFO spawned: 'laravel-worker_06' with pid 19
+2023-03-08 12:39:36,717 INFO spawned: 'laravel-worker_07' with pid 21
+2023-03-08 12:39:36,745 INFO spawned: 'php-fpm' with pid 23
+2023-03-08 12:39:36,865 INFO exited: crond (exit status 0; not expected)
+2023-03-08 12:39:38,155 INFO spawned: 'crond' with pid 61
+2023-03-08 12:39:38,162 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 12:39:38,162 INFO success: laravel-worker_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 12:39:38,162 INFO success: laravel-worker_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 12:39:38,162 INFO success: laravel-worker_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 12:39:38,162 INFO success: laravel-worker_04 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 12:39:38,162 INFO success: laravel-worker_05 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 12:39:38,162 INFO success: laravel-worker_06 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 12:39:38,163 INFO success: laravel-worker_07 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 12:39:38,163 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 12:39:38,185 INFO exited: crond (exit status 0; not expected)
+2023-03-08 12:39:40,595 INFO spawned: 'crond' with pid 75
+2023-03-08 12:39:40,608 INFO exited: crond (exit status 0; not expected)
+2023-03-08 12:39:43,614 INFO spawned: 'crond' with pid 81
+2023-03-08 12:39:43,627 INFO exited: crond (exit status 0; not expected)
+2023-03-08 12:39:43,628 INFO gave up: crond entered FATAL state, too many start retries too quickly
+2023-03-08 13:28:25,904 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-03-08 13:28:25,904 WARN No file matches via include "/etc/supervisor/laravel-worker.conf"
+2023-03-08 13:28:25,911 INFO RPC interface 'supervisor' initialized
+2023-03-08 13:28:25,912 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2023-03-08 13:28:25,912 INFO supervisord started with pid 10
+2023-03-08 13:28:26,429 INFO spawned: 'crond' with pid 12
+2023-03-08 13:28:26,432 INFO spawned: 'laravel-worker_00' with pid 13
+2023-03-08 13:28:26,435 INFO spawned: 'laravel-worker_01' with pid 15
+2023-03-08 13:28:26,438 INFO spawned: 'laravel-worker_02' with pid 16
+2023-03-08 13:28:26,441 INFO spawned: 'laravel-worker_03' with pid 17
+2023-03-08 13:28:26,444 INFO spawned: 'laravel-worker_04' with pid 18
+2023-03-08 13:28:26,450 INFO spawned: 'laravel-worker_05' with pid 20
+2023-03-08 13:28:26,461 INFO spawned: 'laravel-worker_06' with pid 22
+2023-03-08 13:28:26,471 INFO spawned: 'laravel-worker_07' with pid 23
+2023-03-08 13:28:26,486 INFO spawned: 'php-fpm' with pid 24
+2023-03-08 13:28:26,573 INFO exited: crond (exit status 0; not expected)
+2023-03-08 13:28:27,765 INFO spawned: 'crond' with pid 64
+2023-03-08 13:28:27,765 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 13:28:27,765 INFO success: laravel-worker_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 13:28:27,765 INFO success: laravel-worker_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 13:28:27,766 INFO success: laravel-worker_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 13:28:27,766 INFO success: laravel-worker_04 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 13:28:27,766 INFO success: laravel-worker_05 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 13:28:27,766 INFO success: laravel-worker_06 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 13:28:27,766 INFO success: laravel-worker_07 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 13:28:27,766 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 13:28:27,839 INFO exited: crond (exit status 0; not expected)
+2023-03-08 13:28:29,846 INFO spawned: 'crond' with pid 77
+2023-03-08 13:28:30,863 INFO success: crond entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 13:28:30,864 INFO exited: crond (exit status 0; expected)
+2023-03-08 13:28:31,867 INFO spawned: 'crond' with pid 83
+2023-03-08 13:28:31,881 INFO exited: crond (exit status 0; not expected)
+2023-03-08 13:28:32,885 INFO spawned: 'crond' with pid 89
+2023-03-08 13:28:32,893 INFO exited: crond (exit status 0; not expected)
+2023-03-08 13:28:34,897 INFO spawned: 'crond' with pid 95
+2023-03-08 13:28:34,909 INFO exited: crond (exit status 0; not expected)
+2023-03-08 13:28:37,913 INFO spawned: 'crond' with pid 101
+2023-03-08 13:28:37,927 INFO exited: crond (exit status 0; not expected)
+2023-03-08 13:28:37,927 INFO gave up: crond entered FATAL state, too many start retries too quickly
+2023-03-08 13:33:15,936 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-03-08 13:33:15,937 WARN No file matches via include "/etc/supervisor/laravel-worker.conf"
+2023-03-08 13:33:15,941 INFO RPC interface 'supervisor' initialized
+2023-03-08 13:33:15,941 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2023-03-08 13:33:15,941 INFO supervisord started with pid 9
+2023-03-08 13:33:16,431 INFO spawned: 'crond' with pid 11
+2023-03-08 13:33:16,432 INFO spawned: 'laravel-worker_00' with pid 12
+2023-03-08 13:33:16,434 INFO spawned: 'laravel-worker_01' with pid 13
+2023-03-08 13:33:16,435 INFO spawned: 'laravel-worker_02' with pid 14
+2023-03-08 13:33:16,436 INFO spawned: 'laravel-worker_03' with pid 15
+2023-03-08 13:33:16,438 INFO spawned: 'laravel-worker_04' with pid 16
+2023-03-08 13:33:16,439 INFO spawned: 'laravel-worker_05' with pid 17
+2023-03-08 13:33:16,441 INFO spawned: 'laravel-worker_06' with pid 19
+2023-03-08 13:33:16,444 INFO spawned: 'laravel-worker_07' with pid 20
+2023-03-08 13:33:16,446 INFO spawned: 'php-fpm' with pid 21
+2023-03-08 13:33:16,521 INFO exited: crond (exit status 0; not expected)
+2023-03-08 13:33:18,051 INFO spawned: 'crond' with pid 70
+2023-03-08 13:33:18,052 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 13:33:18,052 INFO success: laravel-worker_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 13:33:18,052 INFO success: laravel-worker_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 13:33:18,052 INFO success: laravel-worker_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 13:33:18,052 INFO success: laravel-worker_04 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 13:33:18,052 INFO success: laravel-worker_05 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 13:33:18,052 INFO success: laravel-worker_06 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 13:33:18,052 INFO success: laravel-worker_07 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 13:33:18,052 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 13:33:18,062 INFO exited: crond (exit status 0; not expected)
+2023-03-08 13:33:20,066 INFO spawned: 'crond' with pid 76
+2023-03-08 13:33:20,077 INFO exited: crond (exit status 0; not expected)
+2023-03-08 13:33:23,081 INFO spawned: 'crond' with pid 82
+2023-03-08 13:33:23,088 INFO exited: crond (exit status 0; not expected)
+2023-03-08 13:33:23,088 INFO gave up: crond entered FATAL state, too many start retries too quickly
+2023-03-08 13:38:37,272 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-03-08 13:38:37,272 WARN No file matches via include "/etc/supervisor/laravel-worker.conf"
+2023-03-08 13:38:37,275 INFO RPC interface 'supervisor' initialized
+2023-03-08 13:38:37,275 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2023-03-08 13:38:37,275 INFO supervisord started with pid 9
+2023-03-08 13:38:37,762 INFO spawned: 'crond' with pid 11
+2023-03-08 13:38:37,763 INFO spawned: 'laravel-worker_00' with pid 12
+2023-03-08 13:38:37,765 INFO spawned: 'laravel-worker_01' with pid 14
+2023-03-08 13:38:37,766 INFO spawned: 'laravel-worker_02' with pid 16
+2023-03-08 13:38:37,767 INFO spawned: 'laravel-worker_03' with pid 19
+2023-03-08 13:38:37,769 INFO spawned: 'laravel-worker_04' with pid 20
+2023-03-08 13:38:37,771 INFO spawned: 'laravel-worker_05' with pid 22
+2023-03-08 13:38:37,773 INFO spawned: 'laravel-worker_06' with pid 23
+2023-03-08 13:38:37,776 INFO spawned: 'laravel-worker_07' with pid 24
+2023-03-08 13:38:37,778 INFO spawned: 'php-fpm' with pid 25
+2023-03-08 13:38:37,805 INFO exited: crond (exit status 0; not expected)
+2023-03-08 13:38:39,362 INFO spawned: 'crond' with pid 70
+2023-03-08 13:38:39,363 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 13:38:39,363 INFO success: laravel-worker_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 13:38:39,363 INFO success: laravel-worker_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 13:38:39,363 INFO success: laravel-worker_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 13:38:39,363 INFO success: laravel-worker_04 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 13:38:39,363 INFO success: laravel-worker_05 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 13:38:39,363 INFO success: laravel-worker_06 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 13:38:39,363 INFO success: laravel-worker_07 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 13:38:39,363 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 13:38:39,369 INFO exited: crond (exit status 0; not expected)
+2023-03-08 13:38:41,373 INFO spawned: 'crond' with pid 76
+2023-03-08 13:38:41,379 INFO exited: crond (exit status 0; not expected)
+2023-03-08 13:38:44,383 INFO spawned: 'crond' with pid 82
+2023-03-08 13:38:44,390 INFO exited: crond (exit status 0; not expected)
+2023-03-08 13:38:44,390 INFO gave up: crond entered FATAL state, too many start retries too quickly
+2023-03-08 13:42:40,500 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-03-08 13:42:40,500 WARN No file matches via include "/etc/supervisor/laravel-worker.conf"
+2023-03-08 13:42:40,503 INFO RPC interface 'supervisor' initialized
+2023-03-08 13:42:40,503 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2023-03-08 13:42:40,503 INFO supervisord started with pid 9
+2023-03-08 13:42:41,008 INFO spawned: 'crond' with pid 11
+2023-03-08 13:42:41,010 INFO spawned: 'laravel-worker_00' with pid 12
+2023-03-08 13:42:41,011 INFO spawned: 'laravel-worker_01' with pid 14
+2023-03-08 13:42:41,013 INFO spawned: 'laravel-worker_02' with pid 16
+2023-03-08 13:42:41,014 INFO spawned: 'laravel-worker_03' with pid 19
+2023-03-08 13:42:41,016 INFO spawned: 'laravel-worker_04' with pid 21
+2023-03-08 13:42:41,017 INFO spawned: 'laravel-worker_05' with pid 23
+2023-03-08 13:42:41,019 INFO spawned: 'laravel-worker_06' with pid 24
+2023-03-08 13:42:41,021 INFO spawned: 'laravel-worker_07' with pid 25
+2023-03-08 13:42:41,023 INFO spawned: 'php-fpm' with pid 26
+2023-03-08 13:42:41,030 INFO exited: crond (exit status 0; not expected)
+2023-03-08 13:42:42,486 INFO spawned: 'crond' with pid 70
+2023-03-08 13:42:42,486 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 13:42:42,486 INFO success: laravel-worker_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 13:42:42,486 INFO success: laravel-worker_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 13:42:42,487 INFO success: laravel-worker_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 13:42:42,487 INFO success: laravel-worker_04 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 13:42:42,487 INFO success: laravel-worker_05 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 13:42:42,487 INFO success: laravel-worker_06 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 13:42:42,487 INFO success: laravel-worker_07 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 13:42:42,487 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 13:42:42,495 INFO exited: crond (exit status 0; not expected)
+2023-03-08 13:42:44,499 INFO spawned: 'crond' with pid 76
+2023-03-08 13:42:44,508 INFO exited: crond (exit status 0; not expected)
+2023-03-08 13:42:47,513 INFO spawned: 'crond' with pid 82
+2023-03-08 13:42:47,520 INFO exited: crond (exit status 0; not expected)
+2023-03-08 13:42:47,520 INFO gave up: crond entered FATAL state, too many start retries too quickly
+2023-03-08 14:03:29,414 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-03-08 14:03:29,415 WARN No file matches via include "/etc/supervisor/laravel-worker.conf"
+2023-03-08 14:03:29,419 INFO RPC interface 'supervisor' initialized
+2023-03-08 14:03:29,419 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2023-03-08 14:03:29,420 INFO supervisord started with pid 9
+2023-03-08 14:03:29,942 INFO spawned: 'crond' with pid 11
+2023-03-08 14:03:29,946 INFO spawned: 'laravel-worker_00' with pid 12
+2023-03-08 14:03:29,949 INFO spawned: 'laravel-worker_01' with pid 13
+2023-03-08 14:03:29,953 INFO spawned: 'laravel-worker_02' with pid 14
+2023-03-08 14:03:29,961 INFO spawned: 'laravel-worker_03' with pid 17
+2023-03-08 14:03:29,967 INFO spawned: 'laravel-worker_04' with pid 19
+2023-03-08 14:03:29,972 INFO spawned: 'laravel-worker_05' with pid 20
+2023-03-08 14:03:29,985 INFO spawned: 'laravel-worker_06' with pid 22
+2023-03-08 14:03:29,988 INFO spawned: 'laravel-worker_07' with pid 23
+2023-03-08 14:03:29,993 INFO spawned: 'php-fpm' with pid 24
+2023-03-08 14:03:30,075 INFO exited: crond (exit status 0; not expected)
+2023-03-08 14:03:31,913 INFO spawned: 'crond' with pid 70
+2023-03-08 14:03:31,913 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 14:03:31,914 INFO success: laravel-worker_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 14:03:31,914 INFO success: laravel-worker_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 14:03:31,914 INFO success: laravel-worker_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 14:03:31,914 INFO success: laravel-worker_04 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 14:03:31,914 INFO success: laravel-worker_05 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 14:03:31,914 INFO success: laravel-worker_06 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 14:03:31,914 INFO success: laravel-worker_07 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 14:03:31,914 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-08 14:03:31,920 INFO exited: crond (exit status 0; not expected)
+2023-03-08 14:03:33,924 INFO spawned: 'crond' with pid 76
+2023-03-08 14:03:33,931 INFO exited: crond (exit status 0; not expected)
+2023-03-08 14:03:36,937 INFO spawned: 'crond' with pid 82
+2023-03-08 14:03:36,944 INFO exited: crond (exit status 0; not expected)
+2023-03-08 14:03:36,944 INFO gave up: crond entered FATAL state, too many start retries too quickly
+2023-03-09 06:14:55,990 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-03-09 06:14:55,992 WARN No file matches via include "/etc/supervisor/laravel-worker.conf"
+2023-03-09 06:14:56,329 INFO RPC interface 'supervisor' initialized
+2023-03-09 06:14:56,329 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2023-03-09 06:14:56,330 INFO supervisord started with pid 8
+2023-03-09 06:14:56,536 INFO spawned: 'crond' with pid 11
+2023-03-09 06:14:56,546 INFO spawned: 'laravel-worker_00' with pid 13
+2023-03-09 06:14:56,550 INFO spawned: 'laravel-worker_01' with pid 15
+2023-03-09 06:14:56,554 INFO spawned: 'laravel-worker_02' with pid 16
+2023-03-09 06:14:56,558 INFO spawned: 'laravel-worker_03' with pid 17
+2023-03-09 06:14:56,562 INFO spawned: 'laravel-worker_04' with pid 18
+2023-03-09 06:14:56,599 INFO spawned: 'laravel-worker_05' with pid 21
+2023-03-09 06:14:56,618 INFO spawned: 'laravel-worker_06' with pid 23
+2023-03-09 06:14:56,632 INFO spawned: 'laravel-worker_07' with pid 24
+2023-03-09 06:14:56,636 INFO spawned: 'php-fpm' with pid 25
+2023-03-09 06:14:56,680 INFO exited: crond (exit status 0; not expected)
+2023-03-09 06:14:58,186 INFO spawned: 'crond' with pid 49
+2023-03-09 06:14:58,187 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 06:14:58,187 INFO success: laravel-worker_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 06:14:58,188 INFO success: laravel-worker_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 06:14:58,188 INFO success: laravel-worker_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 06:14:58,188 INFO success: laravel-worker_04 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 06:14:58,188 INFO success: laravel-worker_05 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 06:14:58,188 INFO success: laravel-worker_06 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 06:14:58,189 INFO success: laravel-worker_07 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 06:14:58,189 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 06:14:58,242 INFO exited: crond (exit status 0; not expected)
+2023-03-09 06:15:00,246 INFO spawned: 'crond' with pid 75
+2023-03-09 06:15:00,258 INFO exited: crond (exit status 0; not expected)
+2023-03-09 06:15:03,262 INFO spawned: 'crond' with pid 83
+2023-03-09 06:15:03,272 INFO exited: crond (exit status 0; not expected)
+2023-03-09 06:15:03,273 INFO gave up: crond entered FATAL state, too many start retries too quickly
+2023-03-09 06:36:03,523 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-03-09 06:36:03,523 WARN No file matches via include "/etc/supervisor/laravel-worker.conf"
+2023-03-09 06:36:03,528 INFO RPC interface 'supervisor' initialized
+2023-03-09 06:36:03,528 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2023-03-09 06:36:03,529 INFO supervisord started with pid 9
+2023-03-09 06:36:04,173 INFO spawned: 'crond' with pid 11
+2023-03-09 06:36:04,177 INFO spawned: 'laravel-worker_00' with pid 12
+2023-03-09 06:36:04,180 INFO spawned: 'laravel-worker_01' with pid 15
+2023-03-09 06:36:04,183 INFO spawned: 'laravel-worker_02' with pid 16
+2023-03-09 06:36:04,187 INFO spawned: 'laravel-worker_03' with pid 17
+2023-03-09 06:36:04,190 INFO spawned: 'laravel-worker_04' with pid 19
+2023-03-09 06:36:04,194 INFO spawned: 'laravel-worker_05' with pid 20
+2023-03-09 06:36:04,198 INFO spawned: 'laravel-worker_06' with pid 21
+2023-03-09 06:36:04,202 INFO spawned: 'laravel-worker_07' with pid 22
+2023-03-09 06:36:04,207 INFO spawned: 'php-fpm' with pid 23
+2023-03-09 06:36:04,275 INFO exited: crond (exit status 0; not expected)
+2023-03-09 06:36:05,175 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 06:36:05,576 INFO spawned: 'crond' with pid 63
+2023-03-09 06:36:05,583 INFO success: laravel-worker_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 06:36:05,583 INFO success: laravel-worker_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 06:36:05,584 INFO success: laravel-worker_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 06:36:05,584 INFO success: laravel-worker_04 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 06:36:05,584 INFO success: laravel-worker_05 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 06:36:05,584 INFO success: laravel-worker_06 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 06:36:05,584 INFO success: laravel-worker_07 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 06:36:05,584 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 06:36:05,597 INFO exited: crond (exit status 0; not expected)
+2023-03-09 06:36:07,602 INFO spawned: 'crond' with pid 76
+2023-03-09 06:36:07,613 INFO exited: crond (exit status 0; not expected)
+2023-03-09 06:36:10,618 INFO spawned: 'crond' with pid 82
+2023-03-09 06:36:10,633 INFO exited: crond (exit status 0; not expected)
+2023-03-09 06:36:10,633 INFO gave up: crond entered FATAL state, too many start retries too quickly
+2023-03-09 07:25:48,346 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-03-09 07:25:48,357 WARN No file matches via include "/etc/supervisor/laravel-worker.conf"
+2023-03-09 07:25:48,707 INFO RPC interface 'supervisor' initialized
+2023-03-09 07:25:48,708 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2023-03-09 07:25:48,715 INFO supervisord started with pid 9
+2023-03-09 07:25:49,215 INFO spawned: 'crond' with pid 12
+2023-03-09 07:25:49,219 INFO spawned: 'laravel-worker_00' with pid 13
+2023-03-09 07:25:49,231 INFO spawned: 'laravel-worker_01' with pid 15
+2023-03-09 07:25:49,238 INFO spawned: 'laravel-worker_02' with pid 16
+2023-03-09 07:25:49,244 INFO spawned: 'laravel-worker_03' with pid 17
+2023-03-09 07:25:49,252 INFO spawned: 'laravel-worker_04' with pid 19
+2023-03-09 07:25:49,272 INFO spawned: 'laravel-worker_05' with pid 20
+2023-03-09 07:25:49,283 INFO spawned: 'laravel-worker_06' with pid 22
+2023-03-09 07:25:49,289 INFO spawned: 'laravel-worker_07' with pid 23
+2023-03-09 07:25:49,335 INFO spawned: 'php-fpm' with pid 24
+2023-03-09 07:25:49,485 INFO exited: crond (exit status 0; not expected)
+2023-03-09 07:25:50,335 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 07:25:50,337 INFO success: laravel-worker_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 07:25:50,337 INFO success: laravel-worker_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 07:25:50,337 INFO success: laravel-worker_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 07:25:50,337 INFO success: laravel-worker_04 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 07:25:50,338 INFO success: laravel-worker_05 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 07:25:50,338 INFO success: laravel-worker_06 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 07:25:50,338 INFO success: laravel-worker_07 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 07:25:50,339 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 07:25:51,376 INFO spawned: 'crond' with pid 70
+2023-03-09 07:25:51,395 INFO exited: crond (exit status 0; not expected)
+2023-03-09 07:25:53,401 INFO spawned: 'crond' with pid 76
+2023-03-09 07:25:53,420 INFO exited: crond (exit status 0; not expected)
+2023-03-09 07:25:56,426 INFO spawned: 'crond' with pid 82
+2023-03-09 07:25:56,447 INFO exited: crond (exit status 0; not expected)
+2023-03-09 07:25:56,448 INFO gave up: crond entered FATAL state, too many start retries too quickly
+2023-03-09 07:32:18,389 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-03-09 07:32:18,390 WARN No file matches via include "/etc/supervisor/laravel-worker.conf"
+2023-03-09 07:32:18,403 INFO RPC interface 'supervisor' initialized
+2023-03-09 07:32:18,403 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2023-03-09 07:32:18,404 INFO supervisord started with pid 8
+2023-03-09 07:32:19,010 INFO spawned: 'crond' with pid 10
+2023-03-09 07:32:19,016 INFO spawned: 'laravel-worker_00' with pid 11
+2023-03-09 07:32:19,023 INFO spawned: 'laravel-worker_01' with pid 14
+2023-03-09 07:32:19,028 INFO spawned: 'laravel-worker_02' with pid 15
+2023-03-09 07:32:19,035 INFO spawned: 'laravel-worker_03' with pid 17
+2023-03-09 07:32:19,040 INFO spawned: 'laravel-worker_04' with pid 18
+2023-03-09 07:32:19,056 INFO spawned: 'laravel-worker_05' with pid 20
+2023-03-09 07:32:19,062 INFO spawned: 'laravel-worker_06' with pid 21
+2023-03-09 07:32:19,083 INFO spawned: 'laravel-worker_07' with pid 23
+2023-03-09 07:32:19,117 INFO spawned: 'php-fpm' with pid 25
+2023-03-09 07:32:19,146 INFO exited: crond (exit status 0; not expected)
+2023-03-09 07:32:20,285 INFO spawned: 'crond' with pid 61
+2023-03-09 07:32:20,286 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 07:32:20,286 INFO success: laravel-worker_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 07:32:20,286 INFO success: laravel-worker_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 07:32:20,286 INFO success: laravel-worker_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 07:32:20,286 INFO success: laravel-worker_04 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 07:32:20,286 INFO success: laravel-worker_05 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 07:32:20,286 INFO success: laravel-worker_06 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 07:32:20,287 INFO success: laravel-worker_07 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 07:32:20,287 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 07:32:20,303 INFO exited: crond (exit status 0; not expected)
+2023-03-09 07:32:22,692 INFO spawned: 'crond' with pid 75
+2023-03-09 07:32:22,707 INFO exited: crond (exit status 0; not expected)
+2023-03-09 07:32:25,714 INFO spawned: 'crond' with pid 81
+2023-03-09 07:32:25,733 INFO exited: crond (exit status 0; not expected)
+2023-03-09 07:32:25,733 INFO gave up: crond entered FATAL state, too many start retries too quickly
+2023-03-09 07:43:09,329 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-03-09 07:43:09,329 WARN No file matches via include "/etc/supervisor/laravel-worker.conf"
+2023-03-09 07:43:09,335 INFO RPC interface 'supervisor' initialized
+2023-03-09 07:43:09,335 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2023-03-09 07:43:09,336 INFO supervisord started with pid 9
+2023-03-09 07:43:09,823 INFO spawned: 'crond' with pid 11
+2023-03-09 07:43:09,827 INFO spawned: 'laravel-worker_00' with pid 12
+2023-03-09 07:43:09,830 INFO spawned: 'laravel-worker_01' with pid 13
+2023-03-09 07:43:09,835 INFO spawned: 'laravel-worker_02' with pid 15
+2023-03-09 07:43:09,839 INFO spawned: 'laravel-worker_03' with pid 17
+2023-03-09 07:43:09,844 INFO spawned: 'laravel-worker_04' with pid 18
+2023-03-09 07:43:09,849 INFO spawned: 'laravel-worker_05' with pid 20
+2023-03-09 07:43:09,853 INFO spawned: 'laravel-worker_06' with pid 22
+2023-03-09 07:43:09,859 INFO spawned: 'laravel-worker_07' with pid 23
+2023-03-09 07:43:09,866 INFO spawned: 'php-fpm' with pid 25
+2023-03-09 07:43:09,931 INFO exited: crond (exit status 0; not expected)
+2023-03-09 07:43:11,091 INFO spawned: 'crond' with pid 63
+2023-03-09 07:43:11,092 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 07:43:11,092 INFO success: laravel-worker_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 07:43:11,092 INFO success: laravel-worker_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 07:43:11,092 INFO success: laravel-worker_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 07:43:11,092 INFO success: laravel-worker_04 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 07:43:11,092 INFO success: laravel-worker_05 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 07:43:11,092 INFO success: laravel-worker_06 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 07:43:11,092 INFO success: laravel-worker_07 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 07:43:11,092 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 07:43:11,106 INFO exited: crond (exit status 0; not expected)
+2023-03-09 07:43:13,110 INFO spawned: 'crond' with pid 76
+2023-03-09 07:43:13,126 INFO exited: crond (exit status 0; not expected)
+2023-03-09 07:43:16,131 INFO spawned: 'crond' with pid 82
+2023-03-09 07:43:16,142 INFO exited: crond (exit status 0; not expected)
+2023-03-09 07:43:16,142 INFO gave up: crond entered FATAL state, too many start retries too quickly
+2023-03-09 09:36:34,215 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-03-09 09:36:34,216 WARN No file matches via include "/etc/supervisor/laravel-worker.conf"
+2023-03-09 09:36:34,222 INFO RPC interface 'supervisor' initialized
+2023-03-09 09:36:34,223 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2023-03-09 09:36:34,223 INFO supervisord started with pid 9
+2023-03-09 09:36:34,711 INFO spawned: 'crond' with pid 11
+2023-03-09 09:36:34,714 INFO spawned: 'laravel-worker_00' with pid 12
+2023-03-09 09:36:34,718 INFO spawned: 'laravel-worker_01' with pid 13
+2023-03-09 09:36:34,721 INFO spawned: 'laravel-worker_02' with pid 16
+2023-03-09 09:36:34,724 INFO spawned: 'laravel-worker_03' with pid 17
+2023-03-09 09:36:34,728 INFO spawned: 'laravel-worker_04' with pid 19
+2023-03-09 09:36:34,732 INFO spawned: 'laravel-worker_05' with pid 20
+2023-03-09 09:36:34,739 INFO spawned: 'laravel-worker_06' with pid 21
+2023-03-09 09:36:34,742 INFO spawned: 'laravel-worker_07' with pid 23
+2023-03-09 09:36:34,746 INFO spawned: 'php-fpm' with pid 24
+2023-03-09 09:36:34,811 INFO exited: crond (exit status 0; not expected)
+2023-03-09 09:36:36,657 INFO spawned: 'crond' with pid 70
+2023-03-09 09:36:36,658 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 09:36:36,658 INFO success: laravel-worker_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 09:36:36,658 INFO success: laravel-worker_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 09:36:36,658 INFO success: laravel-worker_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 09:36:36,658 INFO success: laravel-worker_04 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 09:36:36,658 INFO success: laravel-worker_05 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 09:36:36,658 INFO success: laravel-worker_06 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 09:36:36,658 INFO success: laravel-worker_07 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 09:36:36,658 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 09:36:36,665 INFO exited: crond (exit status 0; not expected)
+2023-03-09 09:36:38,669 INFO spawned: 'crond' with pid 76
+2023-03-09 09:36:38,677 INFO exited: crond (exit status 0; not expected)
+2023-03-09 09:36:41,683 INFO spawned: 'crond' with pid 82
+2023-03-09 09:36:41,692 INFO exited: crond (exit status 0; not expected)
+2023-03-09 09:36:41,692 INFO gave up: crond entered FATAL state, too many start retries too quickly
+2023-03-09 09:43:01,100 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-03-09 09:43:01,101 WARN No file matches via include "/etc/supervisor/laravel-worker.conf"
+2023-03-09 09:43:01,107 INFO RPC interface 'supervisor' initialized
+2023-03-09 09:43:01,107 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2023-03-09 09:43:01,108 INFO supervisord started with pid 9
+2023-03-09 09:43:01,683 INFO spawned: 'crond' with pid 11
+2023-03-09 09:43:01,686 INFO spawned: 'laravel-worker_00' with pid 12
+2023-03-09 09:43:01,689 INFO spawned: 'laravel-worker_01' with pid 13
+2023-03-09 09:43:01,693 INFO spawned: 'laravel-worker_02' with pid 15
+2023-03-09 09:43:01,696 INFO spawned: 'laravel-worker_03' with pid 16
+2023-03-09 09:43:01,701 INFO spawned: 'laravel-worker_04' with pid 17
+2023-03-09 09:43:01,706 INFO spawned: 'laravel-worker_05' with pid 19
+2023-03-09 09:43:01,712 INFO spawned: 'laravel-worker_06' with pid 20
+2023-03-09 09:43:01,729 INFO spawned: 'laravel-worker_07' with pid 21
+2023-03-09 09:43:01,733 INFO spawned: 'php-fpm' with pid 22
+2023-03-09 09:43:01,859 INFO exited: crond (exit status 0; not expected)
+2023-03-09 09:43:02,841 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 09:43:02,842 INFO success: laravel-worker_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 09:43:02,843 INFO success: laravel-worker_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 09:43:02,843 INFO success: laravel-worker_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 09:43:02,843 INFO success: laravel-worker_04 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 09:43:02,844 INFO success: laravel-worker_05 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 09:43:02,844 INFO success: laravel-worker_06 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 09:43:02,844 INFO success: laravel-worker_07 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 09:43:02,844 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 09:43:02,871 INFO spawned: 'crond' with pid 30
+2023-03-09 09:43:02,988 INFO exited: crond (exit status 0; not expected)
+2023-03-09 09:43:05,489 INFO spawned: 'crond' with pid 76
+2023-03-09 09:43:05,501 INFO exited: crond (exit status 0; not expected)
+2023-03-09 09:43:08,506 INFO spawned: 'crond' with pid 82
+2023-03-09 09:43:08,516 INFO exited: crond (exit status 0; not expected)
+2023-03-09 09:43:08,516 INFO gave up: crond entered FATAL state, too many start retries too quickly
+2023-03-09 09:48:48,298 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-03-09 09:48:48,298 WARN No file matches via include "/etc/supervisor/laravel-worker.conf"
+2023-03-09 09:48:48,302 INFO RPC interface 'supervisor' initialized
+2023-03-09 09:48:48,302 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2023-03-09 09:48:48,303 INFO supervisord started with pid 10
+2023-03-09 09:48:48,766 INFO spawned: 'crond' with pid 12
+2023-03-09 09:48:48,769 INFO spawned: 'laravel-worker_00' with pid 13
+2023-03-09 09:48:48,772 INFO spawned: 'laravel-worker_01' with pid 14
+2023-03-09 09:48:48,775 INFO spawned: 'laravel-worker_02' with pid 15
+2023-03-09 09:48:48,778 INFO spawned: 'laravel-worker_03' with pid 16
+2023-03-09 09:48:48,784 INFO spawned: 'laravel-worker_04' with pid 18
+2023-03-09 09:48:48,787 INFO spawned: 'laravel-worker_05' with pid 19
+2023-03-09 09:48:48,791 INFO spawned: 'laravel-worker_06' with pid 20
+2023-03-09 09:48:48,795 INFO spawned: 'laravel-worker_07' with pid 21
+2023-03-09 09:48:48,798 INFO spawned: 'php-fpm' with pid 23
+2023-03-09 09:48:48,852 INFO exited: crond (exit status 0; not expected)
+2023-03-09 09:48:50,676 INFO spawned: 'crond' with pid 71
+2023-03-09 09:48:50,676 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 09:48:50,676 INFO success: laravel-worker_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 09:48:50,677 INFO success: laravel-worker_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 09:48:50,677 INFO success: laravel-worker_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 09:48:50,677 INFO success: laravel-worker_04 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 09:48:50,677 INFO success: laravel-worker_05 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 09:48:50,677 INFO success: laravel-worker_06 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 09:48:50,677 INFO success: laravel-worker_07 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 09:48:50,677 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-03-09 09:48:50,686 INFO exited: crond (exit status 0; not expected)
+2023-03-09 09:48:53,688 INFO spawned: 'crond' with pid 77
+2023-03-09 09:48:53,700 INFO exited: crond (exit status 0; not expected)
+2023-03-09 09:48:56,705 INFO spawned: 'crond' with pid 83
+2023-03-09 09:48:56,715 INFO exited: crond (exit status 0; not expected)
+2023-03-09 09:48:56,715 INFO gave up: crond entered FATAL state, too many start retries too quickly

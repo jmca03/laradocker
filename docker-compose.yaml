@@ -7,8 +7,10 @@ services:
       dockerfile: ./dockerfiles/nginx.dockerfile
     volumes:
         - ./src:/var/www/html/backend
+        - ./app:/var/www/html/frontend
     ports:
       - '80:80'
+      - '8000:3000'
     container_name: nginx
     restart: unless-stopped
     depends_on:
