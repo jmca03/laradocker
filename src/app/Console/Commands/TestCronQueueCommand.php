@@ -28,7 +28,5 @@ class TestCronQueueCommand extends Command
     public function handle()
     {
         Log::debug('Cron Works');
-
-        // TestQueueJob::dispatch()->delay(now()->addSeconds(5));
     }
 }

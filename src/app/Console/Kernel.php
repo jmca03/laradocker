@@ -15,6 +15,7 @@ class Kernel extends ConsoleKernel
     {
         // $schedule->command('inspire')->hourly();
         $schedule->command('test:cron-queue')->everyThirtySeconds()->withoutOverlapping();
+        $schedule->job((new TestQueueJob)->delay(now()->addSeconds(5)))->everyThirtySeconds()->withoutOverlapping();
     }
 
     /**
