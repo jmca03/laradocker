@@ -1,6 +1,8 @@
 # syntax=docker/dockerfile:1
 FROM composer:lts as composer
 
+FROM node:21.7.0-alpine3.19 as node
+
 FROM php:8.3-fpm-alpine
 
 ARG UID
@@ -14,7 +16,7 @@ RUN apk update
 
 RUN apk add vim
 
-RUN apk add zip unzip
+RUN apk add zip unzip openrc supervisor dcron
 
 RUN docker-php-ext-install mysqli pdo pdo_mysql
 # RUN docker-php-ext-install pdo_pgsql
@@ -37,6 +39,22 @@ RUN chmod -R 775 /var/www/html/bootstrap/cache
 
 COPY --from=composer /usr/bin/composer /usr/bin/composer
 
-USER ${CONTAINER_USER}
+COPY --from=node /usr/local/bin/node /usr/local/bin/node
+COPY --from=node /usr/local/bin/npm /usr/local/bin/npm
+
+COPY ../config/cron /etc/cron.d/root
+RUN crond -b
+
+COPY ../config/supervisord.conf /etc/supervisor/supervisord.conf
+COPY ../config/build.sh /var/www/build.sh
+
+RUN chmod +x /var/www/build.sh
+
+RUN touch /var/log/cron.log
+
+RUN rc-update add supervisord default
+RUN rc-update add dcron default
 
 EXPOSE 9000
+
+CMD [ "/bin/sh", "-c", "/var/www/build.sh" ]
