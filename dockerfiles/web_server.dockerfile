@@ -14,7 +14,7 @@ RUN apk update
 # of files
 RUN apk add vim
 
-COPY ../../config/dev/nginx.conf /etc/nginx/conf.d/default.conf
+COPY ../../config/nginx.conf /etc/nginx/conf.d/default.conf
 
 # Create docker group with group id matching with host pc
 # RUN addgroup -g ${GID} ${CONTAINER_GROUP}

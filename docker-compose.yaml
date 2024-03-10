@@ -4,7 +4,7 @@ services:
   web_server:
     build:
       context: .
-      dockerfile: ./dockerfiles/dev/web_server.dockerfile
+      dockerfile: ./dockerfiles/web_server.dockerfile
       args:
         - UID
         - GID
@@ -15,22 +15,20 @@ services:
       - 80:80
       - 443:443
     volumes:
-      - ./src:/var/www/src
-      - ./app:/var/www/app
+      - ./src:/var/www/html
     restart: unless-stopped
     container_name: nginx
     env_file:
       - .env
     depends_on:
-      - server_side
-      #   - client_side
+      - app
       - sql_database
-      #   - nosql_database
+      # - nosql_database
       - cache
-  server_side:
+  app:
     build:
       context: .
-      dockerfile: ./dockerfiles/dev/server_side.dockerfile
+      dockerfile: ./dockerfiles/app.dockerfile
       args:
         - UID
         - GID
@@ -38,30 +36,17 @@ services:
         - CONTAINER_GROUP
         - CONTAINER_PASSWORD
     volumes:
-      - ./src:/var/www/src
-    container_name: php_laravel
+      - ./src:/var/www/html
+    container_name: app
     restart: unless-stopped
     depends_on:
       - sql_database
       # - nosql_database
       - cache
-  client_side:
-    user: docker
-    build:
-      context: .
-      dockerfile: ./dockerfiles/dev/client_side.dockerfile
-    volumes:
-      - ./app/var/www/app
-    container_name: vue3
-    restart: unless-stopped
-    env_file:
-      - .env
-    depends_on:
-      - server_side
   sql_database:
     build:
       context: .
-      dockerfile: ./dockerfiles/dev/sql_database.dockerfile
+      dockerfile: ./dockerfiles/sql_database.dockerfile
       args:
         - UID
         - GID
@@ -83,7 +68,7 @@ services:
   nosql_database:
     build:
       context: .
-      dockerfile: ./dockerfiles/dev/nosql_database.dockerfile
+      dockerfile: ./dockerfiles/nosql_database.dockerfile
     restart: unless-stopped
     ports:
       - 27017:27017
@@ -95,7 +80,7 @@ services:
   cache:
     build:
       context: .
-      dockerfile: ./dockerfiles/dev/cache.dockerfile
+      dockerfile: ./dockerfiles/cache.dockerfile
       args:
         - CACHE_PASSWORD=$DATABASE_PASSWORD
     restart: unless-stopped
@@ -104,86 +89,6 @@ services:
     ports:
       - 6379:6379
     container_name: redis
-  process_manager:
-    user: docker
-    build:
-      context: .
-      dockerfile: ./dockerfiles/dev/process_manager.dockerfile
-    volumes:
-      - ./src:/src
-    restart: unless-stopped
-    container_name: supervisor
-  cron:
-    user: docker
-    build:
-      context: .
-      dockerfile: ./dockerfiles/dev/cron.dockerfile
-    volumes:
-      - ./src:/src
-    restart: unless-stopped
-    container_name: cron
-  openssl:
-    user: docker
-    build:
-      context: .
-      dockerfile: ./dockerfiles/dev/openssl.dockerfile
-    entrypoint: ['openssl']
-    restart: unless-stopped
-    container_name: openssl
-  composer:
-    build:
-      context: .
-      dockerfile: ./dockerfiles/dev/composer.dockerfile
-      args:
-        - UID
-        - GID
-        - CONTAINER_USER
-        - CONTAINER_GROUP
-    tty: true
-    stdin_open: true
-    volumes:
-      - ./src:/var/www/html
-    restart: unless-stopped
-    container_name: composer
-  artisan:
-    user: docker
-    build:
-      context: .
-      dockerfile: ./dockerfiles/dev/artisan.dockerfile
-    volumes:
-      - ./src:/var/www/html
-    restart: unless-stopped
-    container_name: composer
-  node:
-    user: docker
-    build:
-      context: .
-      dockerfile: ./dockerfiles/dev/node.dockerfile
-    volumes:
-      - ./src:/var/www/html
-    entrypoint: ['node']
-    restart: unless-stopped
-    container_name: node
-  npm:
-    user: docker
-    build:
-      context: .
-      dockerfile: ./dockerfiles/dev/node.dockerfile
-    volumes:
-      - ./src:/var/www/html
-    entrypoint: ['npm']
-    restart: unless-stopped
-    container_name: npm
-  yarn:
-    user: docker
-    build:
-      context: .
-      dockerfile: ./dockerfiles/dev/node.dockerfile
-    volumes:
-      - ./src:/var/www/html
-    entrypoint: ['yarn']
-    restart: unless-stopped
-    container_name: yarn
 volumes:
   cache_volume:
   sql_database_volume:

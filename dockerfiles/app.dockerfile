@@ -1,3 +1,6 @@
+# syntax=docker/dockerfile:1
+FROM composer:lts as composer
+
 FROM php:8.3-fpm-alpine
 
 ARG UID
@@ -5,7 +8,7 @@ ARG GID
 ARG CONTAINER_USER
 ARG CONTAINER_GROUP
 
-WORKDIR /var/www/src
+WORKDIR /var/www/html
 
 RUN apk update
 
@@ -28,8 +31,11 @@ RUN adduser --uid ${UID} --disabled-password --ingroup ${CONTAINER_GROUP} ${CONT
 # RUN groupmod -g ${UID} www-data
 
 COPY ./src .
-RUN chmod -R 775 /var/www/src/storage
-RUN chmod -R 775 /var/www/src/bootstrap/cache
+
+RUN chmod -R 775 /var/www/html/storage
+RUN chmod -R 775 /var/www/html/bootstrap/cache
+
+COPY --from=composer /usr/bin/composer /usr/bin/composer
 
 USER ${CONTAINER_USER}
 
