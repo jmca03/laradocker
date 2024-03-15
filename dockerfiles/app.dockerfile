@@ -41,6 +41,7 @@ COPY --from=composer /usr/bin/composer /usr/bin/composer
 
 COPY --from=node /usr/local/bin/node /usr/local/bin/node
 COPY --from=node /usr/local/bin/npm /usr/local/bin/npm
+COPY --from=node /usr/local/bin/npm /usr/local/bin/yarn
 
 COPY ../config/cron /etc/cron.d/root
 RUN crond -b
