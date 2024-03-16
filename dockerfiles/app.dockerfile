@@ -9,6 +9,9 @@ ARG UID
 ARG GID
 ARG CONTAINER_USER
 ARG CONTAINER_GROUP
+ARG CONTAINER_PASSWORD
+
+ENV CONTAINER_USER=${CONTAINER_USER}
 
 WORKDIR /var/www/html
 
@@ -16,7 +19,7 @@ RUN apk update
 
 RUN apk add vim
 
-RUN apk add zip unzip openrc supervisor dcron
+RUN apk add zip unzip openrc supervisor dcron openssh-server
 
 RUN docker-php-ext-install mysqli pdo pdo_mysql
 # RUN docker-php-ext-install pdo_pgsql
@@ -28,12 +31,22 @@ RUN apk add pcre-dev ${PHPIZE_DEPS}      \
     && apk del pcre-dev ${PHPIZE_DEPS}
 
 RUN addgroup -g ${GID} ${CONTAINER_GROUP}
-RUN adduser --uid ${UID} --disabled-password --ingroup ${CONTAINER_GROUP} ${CONTAINER_USER}
+
+RUN adduser -D --uid ${UID} \ 
+    --ingroup ${CONTAINER_GROUP} \ 
+    --shell /bin/sh ${CONTAINER_USER} \
+    --home /home/${CONTAINER_USER}
+
+RUN adduser ${CONTAINER_USER} www-data
+
+RUN echo "${CONTAINER_USER}:${CONTAINER_PASSWORD}" | chpasswd
 
 # RUN groupmod -g ${UID} www-data
 
 COPY ./src .
 
+RUN chown -R www-data:www-data /var/www/html/storage
+RUN chown -R www-data:www-data /var/www/html/bootstrap/cache
 RUN chmod -R 775 /var/www/html/storage
 RUN chmod -R 775 /var/www/html/bootstrap/cache
 

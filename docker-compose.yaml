@@ -15,6 +15,7 @@ services:
       - 80:80
       - 443:443
     volumes:
+      - ./config/self-signed-cert:/var/www/self-signed-cert
       - ./src:/var/www/html
     restart: unless-stopped
     container_name: nginx
@@ -37,6 +38,8 @@ services:
         - CONTAINER_PASSWORD
     volumes:
       - ./src:/var/www/html
+    ports:
+      - 22:22
     container_name: app
     restart: unless-stopped
     depends_on:
@@ -74,8 +77,9 @@ services:
       - 27017:27017
     volumes:
       - nosql_database_volume:/data/db
-    env_file:
-      - .env
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=${DATABASE_USER}
+      - MONGO_INITDB_ROOT_PASSWORD=${DATABASE_PASSWORD}
     container_name: mongodb
   cache:
     build:
